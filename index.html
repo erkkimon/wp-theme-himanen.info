@@ -1,27 +1,55 @@
 <!doctype html>
 <head>
+
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="main.js"></script>
-  <link href="style.css" type="text/css" rel="stylesheet" />
-  <title></title>
+  <script src="lib/bxslider/jquery.bxslider.min.js"></script>
+  
+  <link href="lib/bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  
+  <title>Tom Himanen, ihminen</title>
   <meta charset="utf-8">
+  
+  <script>
+    function scrollToAnchor(aid)
+    {
+      var aTag = $("a[name='"+ aid +"']");
+      $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+    }
+  </script>
+  
 </head>
 
 <body>
+
   <div id="wrapper">
+  
     <span id="page-title">Tom Himanen,</span>
     <span id="status-title">ihminen</span>
+    
     <div id="navi">
-      <a href="">lorem</a>
-      <a href="">ipsum</a>
-      <a href="">dolor</a>
-      <a href="">sit</a>
-      <a href="">amet</a>
-      <a href="">blog</a>
+      <a href data-slide-index="0">esittely </a>
+      <a href data-slide-index="1">cv </a>
+      <a href data-slide-index="2">lorem </a>
+      <a href data-slide-index="3">ipsum </a>
+      <a href data-slide-index="4">dolor </a>
+      <span onclick="scrollToAnchor('blog');">blogi</span>
     </div><!-- #navi -->
-    <img src="slides/slide-1.jpg" id="slider" class="shadow" />
-    <div id="posts">
+    
+    <div id="slider">
+      <ul class="bxslider">
+        <li><img src="img/slides/1.jpg" /></li>
+        <li><img src="img/slides/2.jpg" /></li>
+        <li><img src="img/slides/3.jpg" /></li>
+        <li><img src="img/slides/4.jpg" /></li>
+        <li><img src="img/slides/5.jpg" /></li>
+      </ul>
+    </div>
+    
+    <div id="posts"><a name="blog"> 
       <div id="post">
+      
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Nunc lobortis bibendum leo, sed ullamcorper eros venenatis et. 
         Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
@@ -88,6 +116,20 @@
         elit tristique hendrerit. Donec id commodo arcu, at hendrerit velit. 
         Integer ut luctus urna. Nullam pulvinar porttitor sollicitudin.</p>
       </div>
+      
     </div><!-- #posts -->
   </div><!-- #wrapper -->
+  
+  <script type="text/javascript">
+    $(document).ready(function()
+    {      
+      $('.bxslider').bxSlider(
+      {
+        mode: "fade",
+        pagerCustom: "#navi",
+        controls: false
+      });
+    });
+  </script>
+  
 </body>
