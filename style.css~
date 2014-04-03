@@ -95,7 +95,7 @@ p {
   padding: 10px;
 }
 
-.pagenav a:hover, .pagenav span
+.post-nav a:hover, .pagenav span
 {
   background: rgba(255,255,255,0.4);
 }
