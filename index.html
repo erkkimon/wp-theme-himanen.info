@@ -7,6 +7,7 @@
   
   <link href="lib/bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
   
   <title>Tom Himanen, ihminen</title>
   <meta charset="utf-8">
@@ -17,12 +18,21 @@
       var aTag = $("a[name='"+ aid +"']");
       $('html,body').animate({scrollTop: aTag.offset().top},'slow');
     }
+    if($(window).width() > 1000)
+		{
+			$(window).scroll(function()
+			{
+			  var scrollPos = $(document).scrollTop();
+			  $("#bg").css("top", -scrollPos/3+"px");
+			});
+		}
   </script>
   
 </head>
 
 <body>
 
+  <div id="bg"></div>
   <div id="wrapper">
   
     <span id="page-title">Tom Himanen,</span>
@@ -40,15 +50,19 @@
     <div id="slider">
       <ul class="bxslider">
         <li><img src="img/slides/1.jpg" /></li>
+        <!--
         <li><img src="img/slides/2.jpg" /></li>
         <li><img src="img/slides/3.jpg" /></li>
         <li><img src="img/slides/4.jpg" /></li>
         <li><img src="img/slides/5.jpg" /></li>
+        -->
       </ul>
     </div>
     
     <div id="posts"><a name="blog"> 
       <div id="post">
+      
+        <h1>Lorem ipsum</h1>
       
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Nunc lobortis bibendum leo, sed ullamcorper eros venenatis et. 
@@ -58,10 +72,10 @@
         odio feugiat rutrum id sit amet enim. Nam eleifend congue 
         malesuada. </p>
         
-        <p>Phasellus placerat arcu id lorem facilisis cursus. 
+        <p><blockquote>Phasellus placerat arcu id lorem facilisis cursus. 
         Vivamus mattis massa sit amet ligula ultricies accumsan. 
         Duis condimentum tincidunt massa, eu pellentesque ipsum accumsan 
-        hendrerit. Nunc imperdiet vestibulum pellentesque.</p>
+        hendrerit. Nunc imperdiet vestibulum pellentesque.</blockquote></p>
 
         <p>Mauris fringilla, ante vel scelerisque ornare, tellus velit 
         eleifend felis, eu sagittis elit ipsum sed orci. Vestibulum 
