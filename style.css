@@ -54,7 +54,7 @@ blockquote {
   font-size: 22px;
   width: 702px;
   margin-left: -20px;
-  background: url("img/quotation.png") no-repeat rgba(0,0,0,0.3);
+  background: url("img/quotation.png") no-repeat rgba(34,125,159,0.5);
   background-position: 12px 15px;
   min-height: 60px;
   margin-top: 10px;
@@ -81,6 +81,7 @@ p {
   font-size: 22px;
   line-height: 30px;
   padding: 8px;
+  text-align: justify;
 }
 
 
@@ -186,7 +187,7 @@ p {
   width: 18%;
   text-align: center;
   margin-right: 1%;
-  background: rgba(0,0,0,0.05);
+  //background: rgba(0,0,0,0.05);
   border: none;
 }
 
@@ -217,3 +218,11 @@ p {
   padding-top: 30px;
   padding-bottom: 90px;
 }
+
+/* TWEETS */
+
+*[id*='twitter-widget-'] {
+  width: 50%;
+  margin: 20px !important;
+  float: right !important;
+} 

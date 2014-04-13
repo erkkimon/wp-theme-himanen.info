@@ -10,18 +10,27 @@ $(document).ready(function()
   });
 
   // Scrolling-related functionalities
-  $(document).scroll(function ()
+  if($(window).width() > 1050)
   {
-    var y = $(this).scrollTop();
-    if (y > 600)
+    $(window).scroll(function()
     {
-      $('#fb-like-side-wrapper').fadeIn();
-    }
-    else
+      var scrollPos = $(document).scrollTop();
+      $("#bg").css("top", -scrollPos/3+"px");
+    });
+    $(document).scroll(function ()
     {
-      $('#fb-like-side-wrapper').fadeOut();
-    }
-  });
+      var y = $(this).scrollTop();
+      if (y > 600)
+      {
+        $('#fb-like-side-wrapper').fadeIn();
+      }
+      else
+      {
+        $('#fb-like-side-wrapper').fadeOut();
+      }
+    });
+  }
+
 
   // Screen-width related functionalities
 });

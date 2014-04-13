@@ -19,14 +19,6 @@
       var aTag = $("a[name='"+ aid +"']");
       $('html,body').animate({scrollTop: aTag.offset().top},'slow');
     }
-    if($(window).width() > 1000)
-		{
-			$(window).scroll(function()
-			{
-			  var scrollPos = $(document).scrollTop();
-			  $("#bg").css("top", -scrollPos/3+"px");
-			});
-		}
   </script>
 
 </head>
