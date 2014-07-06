@@ -1,11 +1,4 @@
-/* RESET STYLES */
-html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
-dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
-a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
-strong, sub, sup, tt, var, legend, fieldset, figure {
-  margin: 0;
-  padding: 0;
-}
+/* FONTS */
 
 @font-face {
   font-family: "bebas-neue";
@@ -36,16 +29,7 @@ strong, sub, sup, tt, var, legend, fieldset, figure {
 
 a {
   text-decoration: none;
-  color: #FFF;
-  border-bottom: 1px dashed #FFF;
-}
-
-a:hover {
-  border-bottom: 1px solid #FFF;
-}
-
-article {
-  padding-top: 30px;
+  color: #000;
 }
 
 blockquote {
@@ -54,11 +38,8 @@ blockquote {
   font-size: 22px;
   width: 702px;
   margin-left: -20px;
-  background: url("img/quotation.png") no-repeat rgba(34,125,159,0.5);
+  background: url("img/quotation.png") no-repeat rgba(0,0,0,0.3);
   background-position: 12px 15px;
-  min-height: 60px;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 body {
@@ -66,157 +47,163 @@ body {
   margin: 0px;
   padding: 0px;
   background-size: cover;
-  color: #FFF;
-  background: #0295c9;
+  color: #000;
 }
 
-h1, h1 a {
-  font-size: 30px;
-  text-decoration: none;
-  margin-left: 4px;
+h1, h2, h3 {
+  font-family: "bebas-neue";
 }
 
 p {
   margin-top: 10px;
-  font-size: 22px;
-  line-height: 30px;
-  padding: 8px;
-  text-align: justify;
+  font-size: 18px;
 }
 
-
-/* CLASSES */
-
-.bx-wrapper .bx-viewport
+html, body 
 {
-  -moz-box-shadow: 	0px 0px 12px 2px #000;
-  -webkit-box-shadow: 	0px 0px 12px 2px #000;
-  box-shadow: 		0px 0px 12px 2px #000;
-  border: 0;
+  height: 100%;
+}
+
+.navbar-toggle 
+{
+  float: left;
+  margin-left: 15px;
+}
+
+.navmenu 
+{
+  z-index: 1;
+  width: 200px;
+}
+
+.canvas 
+{
+  position: relative;
   left: 0;
+  z-index: 2;
+  min-height: 100%;
+  padding: 50px 0 0 0;
   background: #fff;
+}
+
+/* vertical-centered text */
+.text-vcenter 
+{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.text-vcenter h1 
+{
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+/* additional sections */
+#home 
+{
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#bg
+{ 
+  position: fixed; 
+  left: 0px; top: 0px; right: 0px; bottom: 0px;
+  background: url("img/bg.jpg") top center no-repeat; 
+  z-index: -2;
+  length: 100%;
+}
+
+#slogan
+{
+  position: fixed; 
+  height: 90%;
+  background: yellow;
+  margin-top: 2%;
+  top: 0px;
+  left: 0px;
+  width: 95%;
+  height: 80%;
+  background: url("img/slogan.png") right no-repeat; 
+  background-size: contain;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+#services
+{
+  background: white;
+}
+
+#desktop-nav
+{
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  background: #FFF;
+  height: 50px;
+  margin-top: -50px;
+  z-index: 99;
+  opacity: 0.9;
   padding: 0px;
+  font-size: 20px;
+  font-family: "bebas-neue";
 }
 
-.pagenav a, .pagenav span
+#desktop-nav ul
 {
-  margin: 20px 10px 20px 0px;
-  background: rgba(0,0,0,0.4);
-  display: inline-block;
-  padding: 10px;
-  border: none;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 50px;
 }
 
-.pagenav a:hover, .pagenav span
+#desktop-nav li
 {
-  background: rgba(255,255,255,0.4);
-  border: none;
+  display: inline-block; 
 }
 
 .shadow
 {
-  -moz-box-shadow:    0px 0px 12px 2px #000;
-  -webkit-box-shadow: 0px 0px 12px 2px #000;
-  box-shadow:         0px 0px 12px 2px #000;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000')";
-  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000');
+	-moz-box-shadow: 	0px 0px 12px 2px #000;
+	-webkit-box-shadow: 	0px 0px 12px 2px #000;
+	box-shadow: 		0px 0px 12px 2px #000;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000');
 }
 
-/* IDS */
-
-#bg {
-	position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	padding: 0px 0px 0px 0px;
-	background: url("img/bg.jpg") top center no-repeat #0295c9;
-	background-size: cover;
-	z-index: -2;
+.tutor-img
+{
+  padding-top: 2em;
 }
 
-#fb-comments-wrapper {
-  margin-top: 0px;
-  background: rgba(255,255,255,0.3);
+.likebutton-placeholder
+{
+  width: 100px; 
+  height: 20px; 
+  position: absolute; 
+  bottom: 14px; 
+  right: 0px;
+  opacity: 0.8;
 }
 
-#fb-like-bottom-wrapper {
-  margin-top: 40px;
-  background: rgba(255,255,255,0.3);
-  padding: 10px;
-  margin-bottom: 0px;
+.likebutton-placeholder iframe
+{
+  border: 0px;
 }
 
-#fb-like-side-wrapper {
-  position: fixed;
-  top: 60px;
-  left: 0px;
-  width: 100px;
-  display: none;
-  background: rgba(0,0,0,0.3);
-  padding: 20px 20px 20px 30px;
-}
-
-#fb-like-top-wrapper {
-  display: inline-block;
-  width: 100px;
-  margin-left: 70px;
-  vertical-align: 13px;
-  transform: scale(2, 2);
-  -moz-transform: scale(2, 2);
-  -ms-transform: scale(2, 2);
-  -webkit-transform: scale(2, 2);
-  -o-transform: scale(2, 2);
-  transform-origin: 50% 50%;
-  z-index: 99;
-}
-
-#navi {
-  font-family: "bebas-neue";
-  width: 100%;
-  font-size: 35px;
+.navmenu-default a, #desktop-nav a
+{
   cursor: pointer;
-  padding-top: 30px;
-  padding-bottom: 5px;
-}
-
-#navi a, #navi span {
-  color: #FFF;
-  display: inline-block;
-  width: 18%;
-  text-align: center;
-  margin-right: 1%;
-  //background: rgba(0,0,0,0.05);
-  border: none;
-}
-
-#logo, #logo a{
-  border: none;
-}
-
-#page-title {
-  font-family: "bebas-neue";
-  font-size: 87px;
-}
-
-#slider {
-  width: 802px;
-  margin-left: -20px;
-  margin-top: 10px;
-}
-
-#status-title {
-  font-family: "bebas-neue";
-  font-size: 62px;
-}
-
-#wrapper {
-  width: 762px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 30px;
-  padding-bottom: 90px;
 }
 
 /* TWEETS */
@@ -226,3 +213,57 @@ p {
   margin: 20px !important;
   float: right !important;
 } 
+
+@media (min-width: 0) 
+{
+  .navbar-toggle 
+  {
+    display: block; /* force showing the toggle */
+  }
+  #desktop-nav
+  {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) 
+{
+  body 
+  {
+    padding: 0;
+  }
+  .navbar 
+  {
+/* 
+    right: auto;
+    background: none;
+    border: none;
+ */
+    display: none;
+  }
+  .canvas 
+  {
+    padding: 0;
+  }
+  #desktop-nav
+  {
+    display: block; /* force showing the navi */
+  }
+}
+
+@media (max-width: 768px) 
+{
+  #home
+  {
+    height: 50px;
+    background: #FFF;
+  }
+}
+
+@media (max-width: 992px) 
+{
+  #slogan
+  {
+    display: none;
+  }
+}

@@ -37,6 +37,11 @@ strong, sub, sup, tt, var, legend, fieldset, figure {
 a {
   text-decoration: none;
   color: #FFF;
+  border-bottom: 1px dashed #FFF;
+}
+
+a:hover {
+  border-bottom: 1px solid #FFF;
 }
 
 article {
@@ -49,7 +54,7 @@ blockquote {
   font-size: 22px;
   width: 702px;
   margin-left: -20px;
-  background: url("img/quotation.png") no-repeat rgba(0,0,0,0.3);
+  background: url("img/quotation.png") no-repeat rgba(34,125,159,0.5);
   background-position: 12px 15px;
   min-height: 60px;
   margin-top: 10px;
@@ -62,21 +67,27 @@ body {
   padding: 0px;
   background-size: cover;
   color: #FFF;
+  background: #0295c9;
 }
 
-h1 {
+h1, h1 a {
   font-size: 30px;
+  text-decoration: none;
+  margin-left: 4px;
 }
 
 p {
   margin-top: 10px;
   font-size: 22px;
+  line-height: 30px;
+  padding: 8px;
+  text-align: justify;
 }
-  
+
 
 /* CLASSES */
 
-.bx-wrapper .bx-viewport 
+.bx-wrapper .bx-viewport
 {
   -moz-box-shadow: 	0px 0px 12px 2px #000;
   -webkit-box-shadow: 	0px 0px 12px 2px #000;
@@ -93,11 +104,13 @@ p {
   background: rgba(0,0,0,0.4);
   display: inline-block;
   padding: 10px;
+  border: none;
 }
 
-.post-nav a:hover, .pagenav span
+.pagenav a:hover, .pagenav span
 {
   background: rgba(255,255,255,0.4);
+  border: none;
 }
 
 .shadow
@@ -113,14 +126,50 @@ p {
 
 #bg {
 	position: fixed;
-	left: 0; 
-	top: 0; 
-	right: 0; 
-	bottom: 0; 
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
 	padding: 0px 0px 0px 0px;
-	background: url("img/bg.jpg") top center no-repeat #7293b4;
+	background: url("img/bg.jpg") top center no-repeat #0295c9;
 	background-size: cover;
 	z-index: -2;
+}
+
+#fb-comments-wrapper {
+  margin-top: 0px;
+  background: rgba(255,255,255,0.3);
+}
+
+#fb-like-bottom-wrapper {
+  margin-top: 40px;
+  background: rgba(255,255,255,0.3);
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+#fb-like-side-wrapper {
+  position: fixed;
+  top: 60px;
+  left: 0px;
+  width: 100px;
+  display: none;
+  background: rgba(0,0,0,0.3);
+  padding: 20px 20px 20px 30px;
+}
+
+#fb-like-top-wrapper {
+  display: inline-block;
+  width: 100px;
+  margin-left: 70px;
+  vertical-align: 13px;
+  transform: scale(2, 2);
+  -moz-transform: scale(2, 2);
+  -ms-transform: scale(2, 2);
+  -webkit-transform: scale(2, 2);
+  -o-transform: scale(2, 2);
+  transform-origin: 50% 50%;
+  z-index: 99;
 }
 
 #navi {
@@ -138,7 +187,12 @@ p {
   width: 18%;
   text-align: center;
   margin-right: 1%;
-  background: rgba(0,0,0,0.05);
+  //background: rgba(0,0,0,0.05);
+  border: none;
+}
+
+#logo, #logo a{
+  border: none;
 }
 
 #page-title {
@@ -164,3 +218,11 @@ p {
   padding-top: 30px;
   padding-bottom: 90px;
 }
+
+/* TWEETS */
+
+*[id*='twitter-widget-'] {
+  width: 50%;
+  margin: 20px !important;
+  float: right !important;
+} 

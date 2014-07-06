@@ -1,127 +1,247 @@
+
 <?php include ("get_template_directory_uri(); . /functions.php"); ?>
-<!doctype html>
-<head>
+<!DOCTYPE html>
 
-  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/main.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/lib/bxslider/jquery.bxslider.min.js"></script>
+<html lang="en">
 
-  <link href="<?php echo get_template_directory_uri(); ?>/lib/bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
-  <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.png" type="image/png" />
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport"               content="width=device-width, initial-scale=1.0">
+    <meta name="author"                 content="The Fellowship of Personal Travis">
+    <meta name="description"            content="Taskukokoinen personal trainerisi. Julkaisuun asti ilmaiseksi.">
+    
+    <meta property="article:title"      content="Personal Raineri – treeniohjelma 2.0" /> 
+    <meta property="article:publisher"  content="https://www.facebook.com/personaltravis" /> 
+    <meta property="og:image"           content="<?php echo get_template_directory_uri(); ?>/img/bg.jpg" /> 
+    <meta property="og:type"            content="sport" />
+    <meta property="og:url"             content="http://personalraineri.fi" />
+    <meta property="og:description"     content="Taskukokoinen personal trainerisi. Julkaisuun asti ilmaiseksi." />
+    
+    <meta name="twitter:title"          content="Personal Raineri – treeniohjelma 2.0" />
+    <meta name="twitter:card"           content="summary" />
+    <meta name="twitter:url"            content="http://personalraineri.fi" />
+    <meta name="twitter:image"          content="<?php echo get_template_directory_uri(); ?>/img/bg.jpg" />
+    <meta name="twitter:description"    content="Taskukokoinen personal trainerisi. Julkaisuun asti ilmaiseksi." />
+    
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.png">
+    
+    <title>Tom Himanen, elämäntapaduunari 2.0</title>
 
-  <title><?php global $page, $paged; wp_title('|', true, 'right'); bloginfo('name');  ?></title>
-  <meta charset="utf-8">
+    <!-- Bootstrap core CSS -->
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/lib/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet">
 
-  <script>
-    function scrollToAnchor(aid)
-    {
-      var aTag = $("a[name='"+ aid +"']");
-      $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-    }
-  </script>
+    <!-- Custom styles for this template -->
+    <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
 
-</head>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
 
-<body>
-
-  <div id="bg"></div>
-  <div id="wrapper">
-
-    <a href="<?php echo site_url(); ?>" id="logo">
-      <span id="page-title">Tom Himanen,</span>
-      <span id="status-title">ihminen</span>
-    </a>
-    <div id="fb-like-top-wrapper">
-      <div class="fb-like"
-      data-href="https://www.facebook.com/tomhimanen"
-      data-layout="button"
-      data-action="like"
-      data-show-faces="false"
-      data-share="false"></div>
+  <body>
+    <div id="bg"></div>
+  
+    <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
+      <a class="navmenu-brand" href="#">Personal Raineri</a>
+      <ul class="nav navmenu-nav">
+        <li><a onclick="scrollToAnchor('projects');">Projektit</a></li>
+        <li><a onclick="scrollToAnchor('cv');">Curriculum Vitae</a></li>
+        <li><a onclick="scrollToAnchor('contact');">Yhteystiedot</a></li>
+      </ul>
     </div>
 
-    <?php if(is_home())
-    { ?>
-      <div id="navi">
-        <a href data-slide-index="0">eurovaalit </a>
-        <a href data-slide-index="1">cv </a>
-        <a href data-slide-index="2">projektit </a>
-        <a href data-slide-index="3">yhteys </a>
-        <span onclick="scrollToAnchor('blog');">blogi</span>
-      </div><!-- #navi -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="likebutton-placeholder">
+        <iframe></iframe>
+      </div> 
+    </div>
 
-      <div id="slider">
-        <ul class="bxslider">
-          <li><img src="<?php echo get_template_directory_uri(); ?>/img/slides/vaaliteesit.jpg" /></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/img/slides/cv.jpg" /></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/img/slides/projektit.jpg" /></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/img/slides/yhteys.jpg" /></li>
+    <!-- Welcomer -->
+    <div id="home" class="home">
+      <div id="slogan"></div>
+    </div>
+    
+    <!-- Desktop navigation -->
+    <div id="desktop-nav" class="pad-section shadow">
+      <div class="container">
+        <div class="likebutton-placeholder">
+          <iframe></iframe>
+        </div> 
+        <ul class="desktop-nav">
+          <b style="color: red">!!! SITE UNDER CONSTRUCTION !!! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+          <li><a onclick="scrollToAnchor('projects');">Projektit</a> |</li>
+          <li><a onclick="scrollToAnchor('cv');">Curriculum Vitae</a> |</li>
+          <li><a onclick="scrollToAnchor('contact');">Yhteystiedot</a></li>
         </ul>
-      </div><?php
-    } ?>
-
-    <a name="blog"></a>
-    <div id="posts">
-      <!-- The loop starts here -->
-      <?php if (have_posts()) : ?>
-      <?php while (have_posts()) : the_post(); ?>
-      <?php get_template_part( 'includes/loop' , 'index'); ?>
-      <?php endwhile; ?>
-      <?php get_template_part( 'includes/pagination'); ?>
-      <?php else : ?>
-      <p><?php _e( 'Kaipaamaasi sivua ei löytynyt.', 'themify' ); ?></p>
-      <?php endif; ?>
-
-      <?php if (!is_page() && is_singular())
-      { ?>
-        <div id="fb-like-bottom-wrapper">
-          <div class="fb-like"
-           data-href="https://www.facebook.com/tomhimanen"
-           data-layout="standard"
-           data-action="recommend"
-           data-show-faces="false"
-           data-share="false">
-         </div>
-        </div>
-        <div id="fb-comments-wrapper">
-          <div id="fb-comments"
-           class="fb-comments"
-           data-href="http://himanen.info"
-           data-width="762" data-numposts="5"
-           data-colorscheme="light">
-         </div><!-- /#fb-comments -->
-       </div><!-- /#fb-comments-wrapper --><?php
-      } ?>
-
-    </div><!-- #posts -->
-  </div><!-- #wrapper -->
-
-  <div id="fb-like-side-wrapper">
-    <div class="fb-like"
-     data-href="https://www.facebook.com/tomhimanen"
-     data-layout="box_count"
-     data-action="recommend"
-     data-show-faces="false"
-     data-share="false">
+      </div>
     </div>
-  </div>
-
-  <?php wp_footer(); ?>
-
-  <!-- fb-stuff -->
-  <div id="fb-root"></div>
-  <script>
-    (function(d, s, id)
-    {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/fi_FI/all.js#xfbml=1&appId=358210697641151";
-      fjs.parentNode.insertBefore(js, fjs);
-    }
-    (document, 'script', 'facebook-jssdk'));
-  </script>
-  <!-- /fb-stuff -->
-
-</body>
+    
+    <?php if(!is_home())
+    { ?>
+    <!-- Blogi -->
+    <div id="services" class="pad-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-xs-12">
+                  <?php if (have_posts()) : ?>
+                  <?php while (have_posts()) : the_post(); ?>
+                  <?php get_template_part( 'includes/loop' , 'index'); ?>
+                  <?php endwhile; ?>
+                  <?php get_template_part( 'includes/pagination'); ?>
+                  <?php else : ?>
+                  <p><?php _e( 'Kaipaamaasi sivua ei löytynyt.', 'themify' ); ?></p>
+                  <?php endif; ?>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div><?php
+    } 
+    else
+    { ?>
+    
+    <!-- Projektit -->
+    <div id="services" class="pad-section">
+      <div class="container">
+        <h1 name="projects">Projektit</h2>
+        <div class="row">
+          <div class="col-sm-12 col-xs-12">
+            <p>Jos minulla on visio, toteutan sen. Usein uusi visio johtaa projektin syntymiseen.
+            Osaan projekteista olen osallistunut yrittäjänä, osaan palkollisena ja osaan pro bonona.
+            Projektien onnistumisen ytimessä on aina osaava ja motivoitunut tiimi, joka pelaa vahvuuksillaan.</p>
+            
+            <p>Kesällä 2013 aloitin mentorina Espoon kristillisen koulun avaruustutkimusprojektissa.
+            Vuoden 2013&ndash;2014 tutkimusprojektin tavoitteena on kasvattaa sieni ISS-avaruusasemalla
+            maan kiertoradalla. Sienen istuttaa, kastelee sekä observoi oppilaiden rakentama ja
+            ohjelmoima robotti. Tehtävänäni on opettaa oppilaille tarvittavat teknilliset taidot ja
+            tukea ongelmanratkaisussa. Kirjoitan tällä hetkellä avaruustutkimuksen tekemisestä kirjaa.</p>
+            
+            <p>Kesästä 2013 lähtien arkeeni on kuulunut 
+            <a href="http://personalraineri.fi" target="_new">Personal Travis</a> -mobiilisovelluksen 
+            kehittäminen. Kesällä 2014 kehitystiimiin liittyi voimaharjoittelun asiantuntija sekä
+            kovanaamainen koodari. Suosittelen sovelluksen testaamista, sillä beta-vaiheessa sen
+            voi ladata ilmaiseksi Android-puhelimiin.</p>
+            
+            <p>Menneistä tietoteknisistä projekteista mieleenpainuvimpiin kuuluu Linux From Scratchin
+            eli oman Linux-pohjaisen käyttöjärjestelmän rakentaminen Raspberry Pille, joka on 
+            luottokortin kokoinen tietokone.</p>
+            
+            <p>Taloudellisesti merkittävin projektini oli Suomen suurin vappufestari VG,
+            joka teki uuden kävijäennätyksensä johtaessani festarin järjestämistä. 
+            Musiikkipuolella pitkäaikaisin projektini on raff reggae -bändi 
+            <a href="http://triol.it" target="_new">trioLIT,</a> jossa soitan rumpuja.
+            trioLIT tosin on enemmän elämäntapa kuin yhtye, joten voidaan puhua projektin sijaan
+            prosessista.</p>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    
+    <!-- Curriculum Vitae -->
+    <div id="services" class="pad-section">
+      <div class="container">
+        <h1 name="cv">Curriculum Vitae</h2>
+        <div class="row">
+          <div class="col-sm-6 col-xs-12">
+            <h3>International Space Station Project Team Mentor</h3>
+            <p>Espoo Christian School, Espoo (Aug 2013 –)</p>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <h3>Stagiaire to MEP Sari Essayah</h3>
+            <p>European Parliament, Brussels (Jun 2013 – Jul 2013)</p>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <h3>ICT Teacher, Active Citizenship Teacher</h3>
+            <p>Espoo Christian School, Espoo (Aug 2011 –)</p>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <h3>Journalist</h3>
+            <p>Fida International, Helsinki (Mar 2011 – Aug 2012)</p>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <h3>Cook's assistant</h3>
+            <p>Espoo Christian School, Espoo (Feb 2012 – Mar 2012)</p>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <h3>Caretaker</h3>
+            <p>Public Employment Office, Kouvola (Jul 2010 – Dec 2011)</p>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <h3>Project Manager</h3>
+            <p>VG Festival / GSK ry, Kouvola (Jun 2009 – Jul 2011)</p>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <h3>Paperboy</h3>
+            <p>Itella Oy, Kouvola (Oct 2007 – Feb 2009)</p>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    
+    <!-- Yhteystiedot -->
+    <div id="services" class="pad-section">
+      <div class="container">
+        <h1 name="contact">Yhteystiedot</h2>
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">
+            <h3>Twitter</h3>
+            </p>@Tom Himanen<p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <h3>IRC</h3>
+            </p>Erkkimon @ freenode<p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <h3>Sähköposti</h3>
+            <script>
+              var azejumo = ['<','t','/','h','c','s','n','i','@','o','"','m','n','r','>','f',':','"','l','@','e','i','i','a','n','m',' ','i','o','n','m','a','t','l','e','m','a','h','l','n',' ','.','"','a','a','o','i','o','>','a','e','.','o','m','n','<','e','"','m','h','a','f','f','s','=','t','=','i'];
+              var ujgktvv = [0,16,65,20,34,37,56,44,51,63,32,18,58,4,67,30,15,40,45,19,25,53,11,43,29,42,33,28,17,24,22,55,13,12,5,9,1,3,35,26,2,59,8,66,23,14,60,31,47,10,57,27,49,54,61,64,41,46,50,52,36,62,6,38,7,48,39,21];var wlsjjqf= new Array();for(var i=0;i<ujgktvv.length;i++){wlsjjqf[ujgktvv[i]] = azejumo[i]; }
+              for(var i=0;i<wlsjjqf.length;i++){document.write(wlsjjqf[i]);}
+            </script>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <h3>Github</h3>
+            </p>Erkkimon<p>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div><?php
+    } ?>
+    
+    <?php wp_footer(); ?>
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/lib/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+    
+    <!-- Additional JavaScript -->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/lib/iframetracker/jquery.iframetracker-1.3.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/lib/dynamic-like-button-switcher/dynamic-like-button-switcher.js"></script>
+    
+    <!-- Google Analytics tracking code -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-44992450-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+  </body>
+</html>
