@@ -85,7 +85,7 @@
           { ?>
             <li><a onclick="scrollToAnchor('projects');">Projektit</a> |</li>
             <li><a onclick="scrollToAnchor('cv');">Curriculum Vitae</a> |</li>
-            <li><a onclick="scrollToAnchor('contact');">Yhteystiedot |</a></li>
+            <li><a onclick="scrollToAnchor('contact');">Yhteystiedot </a>|</li>
             <li><a href="<?php echo home_url(); ?>/category/blog">Blogi</a></li><?php
           } ?>
           <?php if(!is_home())
