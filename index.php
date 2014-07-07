@@ -83,7 +83,6 @@
         <ul class="desktop-nav">
           <?php if(is_home())
           { ?>
-            <b style="color: red">!!! SITE UNDER CONSTRUCTION !!! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
             <li><a onclick="scrollToAnchor('projects');">Projektit</a> |</li>
             <li><a onclick="scrollToAnchor('cv');">Curriculum Vitae</a> |</li>
             <li><a onclick="scrollToAnchor('contact');">Yhteystiedot |</a></li>
@@ -91,12 +90,11 @@
           } ?>
           <?php if(!is_home())
           { ?>
-            <b style="color: red">!!! SITE UNDER CONSTRUCTION !!! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
-            <li><a href="<?php echo home_url(); ?>/category/blog/monarchy-2.0/">Monarchy 2.0 |</a></li>
-            <li><a href="<?php echo home_url(); ?>/category/blog/maailma-2.0/">Maailma 2.0 |</a></li>
+            <li><a href="<?php echo home_url(); ?>/category/blog/monarchy-2.0/">Monarchy 2.0</a> |</li>
+            <li><a href="<?php echo home_url(); ?>/category/blog/maailma-2.0/">Maailma 2.0</a> |</li>
             <li><a href="<?php echo home_url(); ?>/category/blog/efektiivisyys-2.0/">Efektiivisyys 2.0 |</a></li>
-            <li><a href="<?php echo home_url(); ?>/category/blog"><font size="-4">Kaikki |</font></a></li>
-            <li><a href="<?php echo home_url(); ?>"><font size="-4">Kuka on Himanen?</font></a></li><?php
+            <li><a href="<?php echo home_url(); ?>/category/blog"><font size="-2">Kaikki</a> |</font></li>
+            <li><a href="<?php echo home_url(); ?>"><font size="-2">Kuka on Himanen?</font></a></li><?php
           } ?>
         </ul>
       </div>
