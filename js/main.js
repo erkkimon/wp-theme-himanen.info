@@ -55,4 +55,6 @@ $(document).ready(function()
      $(".likebutton-placeholder").animate({ "opacity": "0.2" }, "slow" );
      $(".likebutton-placeholder").animate({ "opacity": "1.0" }, "slow" );
    }, 15000);
+   
+   $('pre').each(function(i, e) {hljs.highlightBlock(e);});
 });

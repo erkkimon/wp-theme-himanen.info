@@ -8,21 +8,21 @@
   
     <meta charset="utf-8">
     <meta name="viewport"               content="width=device-width, initial-scale=1.0">
-    <meta name="author"                 content="The Fellowship of Personal Travis">
-    <meta name="description"            content="Taskukokoinen personal trainerisi. Julkaisuun asti ilmaiseksi.">
+    <meta name="author"                 content="Tom Himanen">
+    <meta name="description"            content="Hoitamalla hommasi tehokkaasti luot itsellesi vapaa-aikaa tai lisää tuloja – tai sekä että.">
     
-    <meta property="article:title"      content="Personal Raineri – treeniohjelma 2.0" /> 
-    <meta property="article:publisher"  content="https://www.facebook.com/personaltravis" /> 
+    <meta property="article:title"      content="Tom Himanen, elämäntapaduunari 2.0" /> 
+    <meta property="article:publisher"  content="https://www.facebook.com/tomhimanen" /> 
     <meta property="og:image"           content="<?php echo get_template_directory_uri(); ?>/img/bg.jpg" /> 
-    <meta property="og:type"            content="sport" />
-    <meta property="og:url"             content="http://personalraineri.fi" />
-    <meta property="og:description"     content="Taskukokoinen personal trainerisi. Julkaisuun asti ilmaiseksi." />
+    <meta property="og:type"            content="website" />
+    <meta property="og:url"             content="http://tomhimanen.info" />
+    <meta property="og:description"     content="Hoitamalla hommasi tehokkaasti luot itsellesi vapaa-aikaa tai lisää tuloja – tai sekä että." />
     
-    <meta name="twitter:title"          content="Personal Raineri – treeniohjelma 2.0" />
+    <meta name="twitter:title"          content="Tom Himanen, elämäntapaduunari 2.0" />
     <meta name="twitter:card"           content="summary" />
-    <meta name="twitter:url"            content="http://personalraineri.fi" />
+    <meta name="twitter:url"            content="http://himanen.info" />
     <meta name="twitter:image"          content="<?php echo get_template_directory_uri(); ?>/img/bg.jpg" />
-    <meta name="twitter:description"    content="Taskukokoinen personal trainerisi. Julkaisuun asti ilmaiseksi." />
+    <meta name="twitter:description"    content="Hoitamalla hommasi tehokkaasti luot itsellesi vapaa-aikaa tai lisää tuloja – tai sekä että." />
     
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.png">
     
@@ -31,6 +31,9 @@
     <!-- Bootstrap core CSS -->
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/lib/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
 
     <!-- Custom styles for this template -->
     <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
@@ -78,10 +81,23 @@
           <iframe></iframe>
         </div> 
         <ul class="desktop-nav">
-          <b style="color: red">!!! SITE UNDER CONSTRUCTION !!! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
-          <li><a onclick="scrollToAnchor('projects');">Projektit</a> |</li>
-          <li><a onclick="scrollToAnchor('cv');">Curriculum Vitae</a> |</li>
-          <li><a onclick="scrollToAnchor('contact');">Yhteystiedot</a></li>
+          <?php if(is_home())
+          { ?>
+            <b style="color: red">!!! SITE UNDER CONSTRUCTION !!! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            <li><a onclick="scrollToAnchor('projects');">Projektit</a> |</li>
+            <li><a onclick="scrollToAnchor('cv');">Curriculum Vitae</a> |</li>
+            <li><a onclick="scrollToAnchor('contact');">Yhteystiedot |</a></li>
+            <li><a href="<?php echo home_url(); ?>/category/blog">Blogi</a></li><?php
+          } ?>
+          <?php if(!is_home())
+          { ?>
+            <b style="color: red">!!! SITE UNDER CONSTRUCTION !!! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            <li><a href="<?php echo home_url(); ?>/category/blog/monarchy-2.0/">Monarchy 2.0 |</a></li>
+            <li><a href="<?php echo home_url(); ?>/category/blog/maailma-2.0/">Maailma 2.0 |</a></li>
+            <li><a href="<?php echo home_url(); ?>/category/blog/efektiivisyys-2.0/">Efektiivisyys 2.0 |</a></li>
+            <li><a href="<?php echo home_url(); ?>/category/blog"><font size="-4">Kaikki |</font></a></li>
+            <li><a href="<?php echo home_url(); ?>"><font size="-4">Kuka on Himanen?</font></a></li>
+          } ?>
         </ul>
       </div>
     </div>
