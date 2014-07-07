@@ -93,8 +93,8 @@
             <li><a href="<?php echo home_url(); ?>/category/blog/monarchy-2.0/">Monarchy 2.0</a> |</li>
             <li><a href="<?php echo home_url(); ?>/category/blog/maailma-2.0/">Maailma 2.0</a> |</li>
             <!-- <li><a href="<?php echo home_url(); ?>/category/blog/efektiivisyys-2.0/">Efektiivisyys</a> 2.0 |</li> -->
-            <li><a href="<?php echo home_url(); ?>/category/blog"><font size="14">Kaikki</a> |</font></li>
-            <li><a href="<?php echo home_url(); ?>"><font size="14">Kuka on Himanen?</font></a></li><?php
+            <li><a href="<?php echo home_url(); ?>/category/blog"><font size="8">Kaikki</a> |</font></li>
+            <li><a href="<?php echo home_url(); ?>"><font size="8">Kuka on Himanen?</font></a></li><?php
           } ?>
         </ul>
       </div>
