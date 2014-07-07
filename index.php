@@ -96,7 +96,7 @@
             <li><a href="<?php echo home_url(); ?>/category/blog/maailma-2.0/">Maailma 2.0 |</a></li>
             <li><a href="<?php echo home_url(); ?>/category/blog/efektiivisyys-2.0/">Efektiivisyys 2.0 |</a></li>
             <li><a href="<?php echo home_url(); ?>/category/blog"><font size="-4">Kaikki |</font></a></li>
-            <li><a href="<?php echo home_url(); ?>"><font size="-4">Kuka on Himanen?</font></a></li>
+            <li><a href="<?php echo home_url(); ?>"><font size="-4">Kuka on Himanen?</font></a></li><?php
           } ?>
         </ul>
       </div>
