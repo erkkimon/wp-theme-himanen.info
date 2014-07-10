@@ -77,6 +77,15 @@
     <!-- Desktop navigation -->
     <div id="desktop-nav" class="pad-section shadow">
       <div class="container">
+        <!-- Twitter follow button starts-->
+          <a href="https://twitter.com/TomHimanen" class="twitter-follow-button twitter-follow-button-placeholder" 
+           data-show-count="false" data-size="large">Follow @TomHimanen</a>
+          <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+            if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+          </script>
+        <!-- Twitter follow button ends -->
         <div class="likebutton-placeholder">
           <iframe></iframe>
         </div> 
@@ -253,9 +262,9 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-44992450-1', 'auto');
+      ga('create', 'UA-48781874-1', 'auto');
       ga('send', 'pageview');
     </script>
-    
+
   </body>
 </html>

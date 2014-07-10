@@ -201,6 +201,14 @@ html, body
   border: 0px;
 }
 
+.twitter-follow-button-placeholder
+{
+  position: absolute;
+  bottom: -10px;
+  right: 90px;
+  opacity: 0.8;
+}
+
 .navmenu-default a, #desktop-nav a
 {
   cursor: pointer;
