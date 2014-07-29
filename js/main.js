@@ -59,6 +59,8 @@ $(document).ready(function()
    }, 15000);
    
    $('pre').each(function(i, e) {hljs.highlightBlock(e);});
+
+   $('html, body').animate({scrollTop: $('h1:first').offset().top - 55}, 'slow');
 });
 
 //////////////
