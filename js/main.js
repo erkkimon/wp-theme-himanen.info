@@ -44,7 +44,10 @@ $(window).scroll(function()
   
   if (distanceToPageTop > (homeSectionHeight + 150))
   {
-    $("#google-ads").fadeIn("slow");
+    if ($(window).width() > 1200)
+    {
+      $("#google-ads").fadeIn("slow");
+    }
   }
   else
   {
