@@ -11,14 +11,14 @@
     <meta name="author"                 content="Tom Himanen">
     <meta name="description"            content="Hoitamalla hommasi tehokkaasti luot itsellesi vapaa-aikaa tai lisää tuloja – tai sekä että.">
     
-    <meta property="article:title"      content="Tom Himanen, elämäntapaduunari 2.0" /> 
+    <meta property="article:title"      content="Tom Himanen, selviytymisopas 2.0" /> 
     <meta property="article:publisher"  content="https://www.facebook.com/tomhimanen" /> 
     <meta property="og:image"           content="<?php echo get_template_directory_uri(); ?>/img/bg.jpg" /> 
     <meta property="og:type"            content="website" />
     <meta property="og:url"             content="http://tomhimanen.info" />
     <meta property="og:description"     content="Hoitamalla hommasi tehokkaasti luot itsellesi vapaa-aikaa tai lisää tuloja – tai sekä että." />
     
-    <meta name="twitter:title"          content="Tom Himanen, elämäntapaduunari 2.0" />
+    <meta name="twitter:title"          content="Tom Himanen, selviytymisopas 2.0" />
     <meta name="twitter:card"           content="summary" />
     <meta name="twitter:url"            content="http://himanen.info" />
     <meta name="twitter:image"          content="<?php echo get_template_directory_uri(); ?>/img/bg.jpg" />
@@ -26,7 +26,7 @@
     
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.png">
     
-    <title>Tom Himanen, elämäntapaduunari 2.0</title>
+    <title>Tom Himanen, selviytymisopas 2.0</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
