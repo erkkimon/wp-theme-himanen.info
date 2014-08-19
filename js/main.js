@@ -42,6 +42,16 @@ $(window).scroll(function()
     $("#desktop-nav").css("margin-top", -horizontalNaviHeight+"px");
   }
   
+  if (distanceToPageTop > (homeSectionHeight + 150))
+  {
+    $("#google-ads").fadeIn("slow");
+  }
+  else
+  {
+    $("#google-ads").fadeOut("fast");
+  }
+
+
 }); 
 
 $(document).ready(function()
