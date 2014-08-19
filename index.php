@@ -244,20 +244,22 @@
     </div><?php
     } ?>
 
-	<!-- Google Ads alkaa -->
-          <div style="position: fixed; top: 70px; right: 30px; z-index: 0; display: none;" id="google-ads" class="shadow">
-	    <script type="text/javascript">
-	    google_ad_client = "ca-pub-9567529360753841";
-	    google_ad_slot = "5913621141";
-	    google_ad_width = 160;
-	    google_ad_height = 600;
-	    </script>
-	    <script type="text/javascript"
-	    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-	    </script>
-	  </div>
-	<!-- Google Ads loppuu -->
-
+    <!-- Google Ads alkaa -->
+    <?php if(!is_home())
+    { ?>
+      <div style="position: fixed; top: 70px; right: 50px; z-index: 0; display: none;" id="google-ads" class="shadow">
+        <script type="text/javascript">
+          google_ad_client = "ca-pub-9567529360753841";
+          google_ad_slot = "5913621141";
+          google_ad_width = 160;
+          google_ad_height = 600;
+        </script>
+        <script type="text/javascript"
+         src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+      </div>
+    <?php } ?>
+    <!-- Google Ads loppuu -->
     
     <?php wp_footer(); ?>
     
