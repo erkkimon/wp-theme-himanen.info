@@ -20,7 +20,7 @@
 	?>
 	<!--<span class="post-author">&ndash; <?php the_author_posts_link() ?></span>-->
 	<!--<br /><time datetime="<?php the_time('o-m-d') ?>" class="post-date" pubdate>[<?php the_time('M j, Y'); ?>]</time>-->
-	<?php if (is_category()) { ?>| [<a href="<?php the_permalink()?>#fb-comments">Kommentoi</a>]<?php } ?>
+	<!--<?php if (is_category()) { ?>| [<a href="<?php the_permalink()?>#fb-comments">Kommentoi</a>]<?php } ?>-->
 	<!--<span class="post-category"><?php the_category(', ') ?></span>-->
 
 	<!--<?php edit_post_link(__('Muokkaa', 'themify'), '[', ']'); ?>-->

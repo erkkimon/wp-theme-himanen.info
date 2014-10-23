@@ -9,20 +9,20 @@
     <meta charset="utf-8">
     <meta name="viewport"               content="width=device-width, initial-scale=1.0">
     <meta name="author"                 content="Tom Himanen">
-    <meta name="description"            content="Hoitamalla hommasi tehokkaasti luot itsellesi vapaa-aikaa tai lisää tuloja – tai sekä että.">
+    <meta name="description"            content="Laiskoja ja aikaansaavia ihmisiä yhdistävä tekijä on efektiivisyys.">
     
     <meta property="article:title"      content="Tom Himanen, selviytymisopas 2.0" /> 
     <meta property="article:publisher"  content="https://www.facebook.com/tomhimanen" /> 
     <meta property="og:image"           content="<?php echo get_template_directory_uri(); ?>/img/bg.jpg" /> 
     <meta property="og:type"            content="website" />
     <meta property="og:url"             content="http://tomhimanen.info" />
-    <meta property="og:description"     content="Hoitamalla hommasi tehokkaasti luot itsellesi vapaa-aikaa tai lisää tuloja – tai sekä että." />
+    <meta property="og:description"     content="Laiskoja ja aikaansaavia ihmisiä yhdistävä tekijä on efektiivisyys." />
     
     <meta name="twitter:title"          content="Tom Himanen, selviytymisopas 2.0" />
     <meta name="twitter:card"           content="summary" />
     <meta name="twitter:url"            content="http://himanen.info" />
     <meta name="twitter:image"          content="<?php echo get_template_directory_uri(); ?>/img/bg.jpg" />
-    <meta name="twitter:description"    content="Hoitamalla hommasi tehokkaasti luot itsellesi vapaa-aikaa tai lisää tuloja – tai sekä että." />
+    <meta name="twitter:description"    content="Laiskoja ja aikaansaavia ihmisiä yhdistävä tekijä on efektiivisyys." />
     
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.png">
     
@@ -126,7 +126,9 @@
                   <?php endif; ?>
           </div>
         </div>
-        <p>asdf</p>
+	<p>
+          <iframe style="height: 30px; top: 80px" src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35&amp;appId=1442780809316917" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>
+        </p>
         <hr />
       </div>
     </div><?php
