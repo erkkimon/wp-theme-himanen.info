@@ -70,7 +70,7 @@ $(document).ready(function()
    
    $('pre').each(function(i, e) {hljs.highlightBlock(e);});
 
-   $('html, body').delay(1000).animate({scrollTop: $('h1:first').offset().top - 55}, 'slow');
+   $('html, body').delay(500).animate({scrollTop: $('h1:first').offset().top - 55}, 'fast');
 
 });
 

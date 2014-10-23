@@ -126,6 +126,7 @@
                   <?php endif; ?>
           </div>
         </div>
+        <p>asdf</p>
         <hr />
       </div>
     </div><?php
@@ -220,7 +221,7 @@
         <div class="row">
           <div class="col-sm-3 col-xs-6">
             <h3>Twitter</h3>
-            </p>@Tom Himanen<p>
+            </p><a href="https://twitter.com/TomHimanen" target="_new">@TomHimanen</a><p>
           </div>
           <div class="col-sm-3 col-xs-6">
             <h3>IRC</h3>
