@@ -11,14 +11,14 @@
     <meta name="author"                 content="Tom Himanen">
     <meta name="description"            content="Laiskoja ja aikaansaavia ihmisiä yhdistävä tekijä on efektiivisyys.">
     
-    <meta property="article:title"      content="Tom Himanen, selviytymisopas 2.0" /> 
+    <meta property="article:title"      content="<?php if(is_home()) { echo("Tom Himanen, selviytymisopas 2.0"); } else { echo(get_the_title()); } ?>" /> 
     <meta property="article:publisher"  content="https://www.facebook.com/tomhimanen" /> 
     <meta property="og:image"           content="<?php echo get_template_directory_uri(); ?>/img/bg.jpg" /> 
     <meta property="og:type"            content="website" />
     <meta property="og:url"             content="http://tomhimanen.info" />
     <meta property="og:description"     content="Laiskoja ja aikaansaavia ihmisiä yhdistävä tekijä on efektiivisyys." />
     
-    <meta name="twitter:title"          content="Tom Himanen, selviytymisopas 2.0" />
+    <meta name="twitter:title"          content="<?php if(is_home()) { echo("Tom Himanen, selviytymisopas 2.0"); } else { echo(get_the_title()); } ?>" />
     <meta name="twitter:card"           content="summary" />
     <meta name="twitter:url"            content="http://himanen.info" />
     <meta name="twitter:image"          content="<?php echo get_template_directory_uri(); ?>/img/bg.jpg" />
@@ -26,7 +26,7 @@
     
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.png">
     
-    <title>Tom Himanen, selviytymisopas 2.0</title>
+    <title><?php if(is_home()) { echo("Tom Himanen, selviytymisopas 2.0"); } else { echo(get_the_title()); } ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -146,17 +146,13 @@
             Osaan projekteista olen osallistunut yrittäjänä, osaan palkollisena ja osaan pro bonona.
             Projektien onnistumisen ytimessä on aina osaava ja motivoitunut tiimi, joka pelaa vahvuuksillaan.</p>
             
-            <p>Kesällä 2013 aloitin mentorina Espoon kristillisen koulun avaruustutkimusprojektissa.
-            Vuoden 2013&ndash;2014 tutkimusprojektin tavoitteena on kasvattaa sieni ISS-avaruusasemalla
-            maan kiertoradalla. Sienen istuttaa, kastelee sekä observoi oppilaiden rakentama ja
-            ohjelmoima robotti. Tehtävänäni on opettaa oppilaille tarvittavat teknilliset taidot ja
-            tukea ongelmanratkaisussa. Kirjoitan tällä hetkellä avaruustutkimuksen tekemisestä kirjaa.</p>
-            
-            <p>Kesästä 2013 lähtien arkeeni on kuulunut 
-            <a href="http://personalraineri.fi" target="_new">Personal Travis</a> -mobiilisovelluksen 
-            kehittäminen. Kesällä 2014 kehitystiimiin liittyi voimaharjoittelun asiantuntija sekä
-            kovanaamainen koodari. Suosittelen sovelluksen testaamista, sillä beta-vaiheessa sen
-            voi ladata ilmaiseksi Android-puhelimiin.</p>
+            <p>Kesällä 2013 aloitin mentorina avaruustutkimusprojektissa, joka on toiminut syyskuusta 2014 
+            osana EU-rahoitteista <a href="http://spaceforscience.eu" target="_new">Space for Science -hanketta.</a>
+            Vuoden 2013&ndash;2014 tutkimusprojektin tavoitteena oli kasvattaa sieni ISS-avaruusasemalla
+            maan kiertoradalla. Sienen istutuksesta, kasvatuksesta ja observoinnista vastasi oppilaiden rakentama ja
+            ohjelmoima robotti. Tehtävänäni oli opettaa oppilaille tarvittavat teknilliset taidot ja
+            tukea ongelmanratkaisussa. Ensimmäinen yritys epäonnistui, mutta uusi koe lähetetään avaruuteen
+            kesällä 2015.</p>
             
             <p>Menneistä tietoteknisistä projekteista mieleenpainuvimpiin kuuluu Linux From Scratchin
             eli oman Linux-pohjaisen käyttöjärjestelmän rakentaminen Raspberry Pille, joka on 
