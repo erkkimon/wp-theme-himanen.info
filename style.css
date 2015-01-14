@@ -286,11 +286,16 @@ html, body
   {
     display: block;
   }
-  #mobile-ad img {
+  #mobile-ad img 
+  {
     width: 100%;
     position: fixed;
     bottom: 0px;
     z-index: 99;
+  }
+  desktop-ad
+  {
+    display: none;
   }
 }
 
@@ -299,5 +304,17 @@ html, body
   #mobile-ad
   {
     display: none;
+  }
+  #desktop-ad
+  {
+    width: 150px;
+    display: block;
+    position: fixed;
+    right: 7%;
+    top: 150px;
+  }
+  #desktop-ad img
+  {
+    width: 150px; 
   }
 }

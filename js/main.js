@@ -44,11 +44,11 @@ $(window).scroll(function()
   
   if (($(window).width() > 1200) && distanceToPageTop > (homeSectionHeight + 150))
   { 
-      $("#google-ads").fadeIn("slow");
+      $("#desktop-ad").fadeIn("slow");
   }
   else
   {
-    $("#google-ads").fadeOut("fast");
+    $("#desktop-ad").fadeOut("fast");
   }
   
 

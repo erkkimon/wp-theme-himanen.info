@@ -52,9 +52,10 @@
     <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
       <a class="navmenu-brand" href="#">Personal Raineri</a>
       <ul class="nav navmenu-nav">
-        <li><a onclick="scrollToAnchor('projects');">Projektit</a></li>
+        <li><a onclick="scrollToAnchor('projects');\">Projektit</a></li>
         <li><a onclick="scrollToAnchor('cv');">Curriculum Vitae</a></li>
         <li><a onclick="scrollToAnchor('contact');">Yhteystiedot</a></li>
+        <li><a href="category/blog">Blogi</a>
       </ul>
     </div>
 
@@ -246,11 +247,20 @@
     <!-- Mobile ad begins -->
     <?php if(!is_home())
     { ?>
-	<div id="mobile-ad">
-		<a href="http://bit.ly/1w9SrDu"><img src="<?php echo get_template_directory_uri(); ?>/ads/mobile-ad-rantsu.png"></a>
+	<div id="mobile-ad" class="shadow">
+		<a href="http://bit.ly/1w9SrDu"><img src="<?php echo get_template_directory_uri(); ?>/ads/rantsu-ad-mobile.png"></a>
 	</div>
     <?php } ?>
+
     <!-- Mobile ad code ends -->
+    <?php if(!is_home())
+    { ?>
+	<div id="desktop-ad">
+		<a href="http://bit.ly/1w9SrDu"><img src="<?php echo get_template_directory_uri(); ?>/ads/rantsu-ad-2.png"></a>
+	</div>
+    <?php } ?>
+    <!-- Desktop ad begins -->
+    
     
     <?php wp_footer(); ?>
     
