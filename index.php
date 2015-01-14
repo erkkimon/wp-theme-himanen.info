@@ -50,7 +50,7 @@
     <div id="bg"></div>
   
     <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
-      <a class="navmenu-brand" href="#">Personal Raineri</a>
+      <a class="navmenu-brand" href="#">Tom Himanen</a>
       <ul class="nav navmenu-nav">
         <li><a onclick="scrollToAnchor('projects');\">Projektit</a></li>
         <li><a onclick="scrollToAnchor('cv');">Curriculum Vitae</a></li>
