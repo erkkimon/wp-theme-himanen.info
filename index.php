@@ -15,12 +15,12 @@
     <meta property="article:publisher"  content="https://www.facebook.com/tomhimanen" /> 
     <meta property="og:image"           content="<?php echo get_template_directory_uri(); ?>/img/bg.jpg" /> 
     <meta property="og:type"            content="website" />
-    <meta property="og:url"             content="http://tomhimanen.info" />
+    <meta property="og:url"             content="<?php echo get_permalink( $post->ID ); ?>" />
     <meta property="og:description"     content="Laiskoja ja aikaansaavia ihmisiä yhdistävä tekijä on efektiivisyys." />
     
     <meta name="twitter:title"          content="<?php if(is_home()) { echo("Tom Himanen, selviytymisopas 2.0"); } else { echo(get_the_title()); } ?>" />
     <meta name="twitter:card"           content="summary" />
-    <meta name="twitter:url"            content="http://himanen.info" />
+    <meta name="twitter:url"            content="<?php echo get_permalink( $post->ID ); ?>" />
     <meta name="twitter:image"          content="<?php echo get_template_directory_uri(); ?>/img/bg.jpg" />
     <meta name="twitter:description"    content="Laiskoja ja aikaansaavia ihmisiä yhdistävä tekijä on efektiivisyys." />
     
