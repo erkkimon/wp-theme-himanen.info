@@ -68,6 +68,10 @@ html, body
   height: 100%;
 }
 
+ul li {
+  font-size: 18px;
+}
+
 .navbar-toggle 
 {
   float: left;
