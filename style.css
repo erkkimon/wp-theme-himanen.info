@@ -230,6 +230,17 @@ ul li {
   float: right !important;
 } 
 
+#random-tweet {
+  display: none;
+  position: fixed;
+  top: 10px;
+  padding: 0px;
+  margin-left: 50px;
+  width: 300px;
+}
+
+/* Viewport-based exceptions */
+
 @media (min-width: 0) 
 {
   .navbar-toggle 
@@ -265,6 +276,10 @@ ul li {
   {
     display: block; /* force showing the navi */
   }
+  #random-tweet 
+  {
+    display: inline-block;
+  }
 }
 
 @media (max-width: 768px) 
@@ -297,7 +312,7 @@ ul li {
     bottom: 0px;
     z-index: 99;
   }
-  desktop-ad
+  #desktop-ad
   {
     display: none;
   }
@@ -312,7 +327,7 @@ ul li {
   #desktop-ad
   {
     width: 150px;
-    display: block;
+    display: none;
     position: fixed;
     right: 7%;
     top: 150px;

@@ -50,6 +50,13 @@ $(window).scroll(function()
   {
     $("#desktop-ad").fadeOut("fast");
   }
+
+  if (distanceToPageTop < 50 && ($(window).width() > 992)) {
+    $("#random-tweet").fadeIn("fast");
+  }
+  else {
+    $("#random-tweet").fadeOut("fast");
+  }
   
 
 }); 
@@ -70,7 +77,7 @@ $(document).ready(function()
    
    $('pre').each(function(i, e) {hljs.highlightBlock(e);});
 
-   $('html, body').delay(500).animate({scrollTop: $('h1:first').offset().top - 55}, 'fast');
+   //$('html, body').delay(500).animate({scrollTop: $('h1:first').offset().top - 55}, 'fast');
 
 });
 

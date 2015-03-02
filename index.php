@@ -261,6 +261,11 @@
     <?php } ?>
     <!-- Desktop ad begins -->
     
+    <!-- Random tweet code begins -->
+    <div id="random-tweet"></div>
+    <script sync src="https://platform.twitter.com/widgets.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/random-tweet.js"></script>
+    <!-- Random tweet code ends -->
     
     <?php wp_footer(); ?>
     
