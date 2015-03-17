@@ -128,7 +128,7 @@
           </div>
         </div>
 	<p>
-          <iframe style="height: 30px; top: 80px" src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35&amp;appId=1442780809316917" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>
+          <iframe style="height: 30px; top: 80px" src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35&amp;appId=1442780809316917" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>
         </p>
         <hr />
       </div>
@@ -245,21 +245,26 @@
     } ?>
 
     <!-- Mobile ad begins -->
+<!--
     <?php if(!is_home())
     { ?>
 	<div id="mobile-ad" class="shadow">
 		<a href="http://bit.ly/1w9SrDu"><img src="<?php echo get_template_directory_uri(); ?>/ads/rantsu-ad-mobile.png"></a>
 	</div>
     <?php } ?>
+-->
+    <!-- Mobile ad ends -->
 
-    <!-- Mobile ad code ends -->
+    <!-- Desktop ad begins -->
+<!--
     <?php if(!is_home())
     { ?>
 	<div id="desktop-ad">
 		<a href="http://bit.ly/1w9SrDu"><img src="<?php echo get_template_directory_uri(); ?>/ads/rantsu-ad-2.png"></a>
 	</div>
     <?php } ?>
-    <!-- Desktop ad begins -->
+-->
+    <!-- Desktop ad ends -->
     
     <!-- Random tweet code begins -->
     <div id="random-tweet"></div>
