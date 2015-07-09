@@ -248,7 +248,7 @@
     <?php if(!is_home())
     { ?>
 	<div id="mobile-ad" class="shadow">
-		<a href="http://bit.ly/1w9SrDu"><img src="<?php echo get_template_directory_uri(); ?>/ads/rantsu-ad-mobile.png"></a>
+		<a href="http://bit.ly/1UGcY2g"><img src="<?php echo get_template_directory_uri(); ?>/ads/rantsu-ad-mobile.png"></a>
 	</div>
     <?php } ?>
     <!-- Mobile ad ends -->
