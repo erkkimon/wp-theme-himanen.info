@@ -326,14 +326,14 @@ ul li {
   }
   #desktop-ad
   {
-    width: 150px;
+    width: 250px;
     display: none;
     position: fixed;
-    right: 7%;
+    right: 4%;
     top: 150px;
   }
   #desktop-ad img
   {
-    width: 150px; 
+    width: 250px; 
   }
 }

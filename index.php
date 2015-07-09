@@ -245,25 +245,21 @@
     } ?>
 
     <!-- Mobile ad begins -->
-<!--
     <?php if(!is_home())
     { ?>
 	<div id="mobile-ad" class="shadow">
 		<a href="http://bit.ly/1w9SrDu"><img src="<?php echo get_template_directory_uri(); ?>/ads/rantsu-ad-mobile.png"></a>
 	</div>
     <?php } ?>
--->
     <!-- Mobile ad ends -->
 
     <!-- Desktop ad begins -->
-<!--
     <?php if(!is_home())
     { ?>
 	<div id="desktop-ad">
-		<a href="http://bit.ly/1w9SrDu"><img src="<?php echo get_template_directory_uri(); ?>/ads/rantsu-ad-2.png"></a>
+		<a href="http://bit.ly/1KWy3Rl"><img src="<?php echo get_template_directory_uri(); ?>/ads/pt-ad-en-right-2015-07-09.png" style="width: 180px"></a>
 	</div>
     <?php } ?>
--->
     <!-- Desktop ad ends -->
     
     <!-- Random tweet code begins -->
