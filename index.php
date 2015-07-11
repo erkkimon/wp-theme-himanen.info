@@ -257,7 +257,7 @@
     <?php if(!is_home())
     { ?>
 	<div id="desktop-ad">
-		<a href="http://bit.ly/1UGcY2g"><img src="<?php echo get_template_directory_uri(); ?>/ads/pt-ad-en-right-2015-07-09.png" style="width: 180px"></a>
+		<a href="http://personaltravis.com/#english"><img src="<?php echo get_template_directory_uri(); ?>/ads/pt-ad-en-right-2015-07-09.png" style="width: 180px"></a>
 	</div>
     <?php } ?>
     <!-- Desktop ad ends -->
