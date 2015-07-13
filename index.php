@@ -79,6 +79,7 @@
     <div id="desktop-nav" class="pad-section shadow">
       <div class="container">
         <!-- Twitter follow button starts-->
+	<!--
           <a href="https://twitter.com/TomHimanen" class="twitter-follow-button twitter-follow-button-placeholder" 
            data-show-count="false" data-size="large">Follow @TomHimanen</a>
           <script>
@@ -86,6 +87,7 @@
             if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
             fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
           </script>
+	-->
         <!-- Twitter follow button ends -->
         <div class="likebutton-placeholder">
           <iframe></iframe>
@@ -247,9 +249,9 @@
     <!-- Mobile ad begins -->
     <?php if(!is_home())
     { ?>
-	<div id="mobile-ad" class="shadow">
+	<!--<div id="mobile-ad" class="shadow">
 		<a href="http://rantakuntoon.fi"><img src="<?php echo get_template_directory_uri(); ?>/ads/rantsu-ad-mobile.png"></a>
-	</div>
+	</div>-->
     <?php } ?>
     <!-- Mobile ad ends -->
 
@@ -261,12 +263,6 @@
 	</div>
     <?php } ?>
     <!-- Desktop ad ends -->
-    
-    <!-- Random tweet code begins -->
-    <div id="random-tweet"></div>
-    <script sync src="https://platform.twitter.com/widgets.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/random-tweet.js"></script>
-    <!-- Random tweet code ends -->
     
     <?php wp_footer(); ?>
     
