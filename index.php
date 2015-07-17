@@ -119,7 +119,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-xs-12 col-lg-9 visible-xs">
-            <p><a href="bit.ly/1UDKMgh" target="_new"><img src="<?php echo get_template_directory_uri(); ?>/ads/pt-mobile-ad.png" class="img-responsive"></a></p>
+            <p><a href="http://bit.ly/1UDKMgh" target="_new"><img src="<?php echo get_template_directory_uri(); ?>/ads/pt-mobile-ad.png" class="img-responsive"></a></p>
           </div>
 	</div>
 
@@ -265,7 +265,7 @@
     <?php if(!is_home())
     { ?>
 	<div id="desktop-ad">
-	    <a href="bit.ly/1UDKMgh"><img src="<?php echo get_template_directory_uri(); ?>/ads/pt-ad-en-right-2015-07-09.png" style="width: 180px"></a>
+	    <a href="http://bit.ly/1UDKMgh"><img src="<?php echo get_template_directory_uri(); ?>/ads/pt-ad-en-right-2015-07-09.png" style="width: 180px"></a>
 	</div>
     <?php } ?>
     <!-- Desktop ad ends -->
