@@ -118,6 +118,12 @@
     <div id="services" class="pad-section">
       <div class="container">
         <div class="row">
+          <div class="col-sm-12 col-xs-12 col-lg-9 visible-xs">
+            <p><img src="<?php echo get_template_directory_uri(); ?>/ads/pt-mobile-ad.png" class="img-responsive"</p>
+          </div>
+	</div>
+
+	<div class="row">
           <div class="col-sm-12 col-xs-12 col-lg-9">
                   <?php if (have_posts()) : ?>
                   <?php while (have_posts()) : the_post(); ?>
